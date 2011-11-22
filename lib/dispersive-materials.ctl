@@ -1,7 +1,10 @@
 ;;; Drude-Lorentz dispersion models for different metals
+;;;
 ;;; Meta-source: 
 ;;;     http://www.mail-archive.com/meep-discuss@ab-initio.mit.edu/msg04267.html
 ;;; 
+;;; Materials available:
+;;;     Ag, Al, Au, Be, Cr, Cu, Ni, Pd, Pt, Ti, W, Silica
 ;;; 
 ;;; Author: Bhaskar Mookerji (mookerji@mit.edu)
 ;;; Date Started: 4 November 2011

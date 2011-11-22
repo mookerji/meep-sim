@@ -1,0 +1,24 @@
+Author: Bhaskar Mookerji (mookerji@mit.edu)
+Date Started: 4 November 2011
+
+MEEP source files for plasmonic metamaterial simulations.
+
+On material's dispersion:
+http://ab-initio.mit.edu/wiki/index.php/Meep_Tutorial/Material_dispersion
+
+Ab-Initio software:
+http://ab-initio.mit.edu/wiki/index.php/Main_Page
+
+MEEP:
+http://ab-initio.mit.edu/wiki/index.php/Meep
+
+For MEEP:
+Ardavan F. Oskooi, David Roundy, Mihai Ibanescu, Peter Bermel, J. D.
+Joannopoulos, and Steven G. Johnson, ``MEEP: A flexible free-software package
+for electromagnetic simulations by the FDTD method,'' Computer Physics
+Communications 181, 687–702 (2010).
+
+For photonic band diagram calculations:
+Steven G. Johnson and J. D. Joannopoulos, "Block-iterative frequency-domain
+methods for Maxwell's equations in a planewave basis," Optics Express 8, no.
+3, 173-190 (2001).
