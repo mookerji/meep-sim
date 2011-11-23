@@ -8,7 +8,7 @@
 ; Reset and load libraries
 (reset-meep)
 (load "../../lib/dispersive-materials.ctl")
-(use-output-directory "../../out/data")
+(use-output-directory "../../out/data/mie")
 
 ; Define external parameters
 (define-param r 1.0)
@@ -33,13 +33,27 @@
 (set! geometry (list ag-sphere))
 (set! pml-layers (list sim-pml))
 (set! geometry-lattice sim-lattice)
-(set-param! resolution 10)
+(set-param! resolution 20)
+
+; Flux parameters through sphere
+(define-param nfreq 100)
+;(define trans 
+;      (add-flux fcen df nfreq
+;                (if no-bend?
+;                    (make flux-region
+;                     (center (- (/ sx 2) 1.5) wvg-ycen) (size 0 (* w 2)))
+;                    (make flux-region
+;                     (center wvg-xcen (- (/ sy 2) 1.5)) (size (* w 2) 0)))))
+;                     
+;(define refl 
+;      (add-flux fcen df nfreq
+;                 (make flux-region 
+;                   (center (+ (* -0.5 sx) 1.5) wvg-ycen) (size 0 (* w 2)))))
 
 ; Output parameters
 
-(run-until 10
+(run-until 70
             (at-beginning output-epsilon)
-            (to-appended "ez" (at-every 0.6 output-efield-z)))
-           
+            (at-every 0.1 (output-png Ez "-Zc bluered")))        
 
 ;(exit 0)
