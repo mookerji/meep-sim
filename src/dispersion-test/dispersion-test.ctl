@@ -16,14 +16,7 @@
 (set! geometry-lattice (make lattice (size no-size no-size no-size)))
 (set-param! resolution 20)
 
-(set! default-material
-      (make dielectric (epsilon 2.25)
-	    (polarizations 
-	     (make polarizability
-	       (omega 1.1) (gamma 1e-5) (sigma 0.5))
-	     (make polarizability
-	       (omega 0.5) (gamma 0.1) (sigma 2e-5))
-	     )))
+(set! default-material myAu)
 
 (define-param fcen 1.0)
 (define-param df 2.0)
